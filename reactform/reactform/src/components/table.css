@@ -1,0 +1,35 @@
+table,tr,td,tbody,thead{
+    border: 1px solid black;
+    height: 50px;
+
+    border-collapse: collapse;
+    margin-left: 12px;
+    width: 1250px;
+    /* background-color: darkgray; */
+
+}
+thead{
+    background-color: lightslategrey;
+}
+
+tbody{
+    background-color: azure;
+}
+
+button{
+    margin-left: 100px;
+    background-color: dodgerblue;
+    height: 30px;
+    width: 150;
+    border-radius: 12px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:hover{
+   background-color: lightgreen;
+}
+
+/* table,thead,tbody{
+    margin-left: 300px;
+    width: auto;
+} */
