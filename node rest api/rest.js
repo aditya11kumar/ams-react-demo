@@ -58,7 +58,7 @@ const userSchema = new mongoose.Schema({
 
   dateOfBirth: String,
 
-  gender: String
+  //gender: String
 
 })
 
@@ -76,9 +76,9 @@ const User = new mongoose.model("User", userSchema)
 
 app.post("/form", (req, res) => {
 
-  console.log(req.body)
+  // console.log(req.body)
 
-  const { firstName, middleName, lastName, phoneNumber, email, address, education, techSkills, dateOfBirth, gender } = req.body
+  const { firstName, middleName, lastName, phoneNumber, email, address, education, techSkills, dateOfBirth } = req.body
 
   User.findOne({ email: email }, (err, user) => {
 
@@ -108,7 +108,7 @@ app.post("/form", (req, res) => {
 
         dateOfBirth: dateOfBirth,
 
-        gender: gender
+        //gender: gender
 
       })
 
