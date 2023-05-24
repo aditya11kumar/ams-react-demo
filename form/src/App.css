@@ -1,0 +1,90 @@
+.App {
+
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+form {
+  width: 70%;
+  margin: 50px auto;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #ccc;
+}
+
+input[type="text"], input[type="email"], textarea , input[type="date"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #ccc;
+  height: 50px;
+  display: inline-block;
+}
+
+
+
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-right: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button[type="reset"] {
+  background-color: #f44336; /* Red */
+  border: none;
+  margin-left: 50px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  right: 0%;
+  
+  
+}
+
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+label{
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  padding: 5px;
+}
+
+
