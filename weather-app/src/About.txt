@@ -1,0 +1,3 @@
+API official link- openweathermap.org
+
+step 1: create account and copy API key from the dashboard.
