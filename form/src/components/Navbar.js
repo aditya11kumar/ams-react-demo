@@ -1,7 +1,7 @@
 export default function Navbar() {
     return (<nav className="nav">
         <div className="box">
-        <img src="C:\Users\shubhamtripathi01\Downloads\MicrosoftTeams-image.png" alt="Girl in a jacket" style={{height:'80px',width:'90px'}} />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRScoyf6b6ggfni5cWwNdEHa8I6_CbgFcp8ew&usqp=CAU" alt="dp" style={{height:'80px',width:'90px'}} />
             <h1>Dealer Management System</h1>
             <div className="login">
                 <p style={{position:'relative',top:'10px',left:'15px'}}>Akhilesh Sharma</p>

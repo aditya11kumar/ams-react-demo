@@ -27,13 +27,13 @@ table {
     background-color: #f2f2f2;
   }
   
-  tr:nth-child(even) {
+  /* tr:nth-child(even) {
     background-color: #f2f2f2;
-  }
+  } */
   
-  tr:hover {
+  /* tr:hover {
     background-color: #ddd;
-  }
+  } */
   
   button {
     background-color: #4CAF50;

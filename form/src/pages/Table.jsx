@@ -2,17 +2,6 @@ import React, { useState, useEffect } from "react";
 import './table.css';
 
 function Table() {
-//   const [data, setData] = useState([]);
-
-//  useEffect(() => {
-
-//     //setData(data)
-//     fetch('127.0.0.1:8000/api/data')
-//       .then(response => response.json())
-//       .then((data) => {console.log(data)
-//         setData(data.data)
-//       });
-//   }, []);
 
 const [data,setData]=useState([]);
 
@@ -98,15 +87,15 @@ const [data,setData]=useState([]);
                 <td>
                     {/* <button onClick={() => handleSendData(d)}>Send Data</button> */}
                     <a href onClick={() => handleSendData(d)}>
-                      <img src="path/to/image.jpg" alt="view" />
+                      <img src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/view-1024.png" alt="view" style={{height:"20px", width:"20%" ,padding:"4px"}} />
                     </a>
 
                     <a href onClick={() => handleSendData(d)}>
-                      <img src="path/to/image.jpg" alt="Delete" />
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUk_k4grzKJAb5SIlBV3AGKrVgsYU9N6d52WD2UCDbHg&s" alt="Delete" style={{height:"20px",width:"20%",padding:"4px"}}/>
                     </a>
 
                     <a href onClick={() => handleSendData(d)}>
-                      <img src="path/to/image.jpg" alt="Edit" />
+                      <img src="https://spng.pngfind.com/pngs/s/70-704184_png-file-svg-pencil-edit-icon-png-transparent.png" alt="Edit" style={{height:"20px",padding:"4px"}} />
                     </a>
                   </td>
               </tr>
