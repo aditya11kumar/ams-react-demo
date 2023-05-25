@@ -1,10 +1,10 @@
 // import React, { useState } from "react";
 // import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Table from "./Table";
+import Table from "./pages/Table";
 import './App.css';
-import Form from "./form";
-import Navbar from "./Navbar";
-import FormData from "./FormData";
+import Form from "./pages/form";
+import Navbar from "./components/Navbar";
+import FormData from "./pages/FormData";
 
 
 // function App() {
