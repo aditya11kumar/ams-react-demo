@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
  import './index.css';
 import App from './App';
-import './components/navbar.css';
+// import './components/navbar.css';
+import './sass/navbar.css';
 
 
 
