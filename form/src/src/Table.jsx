@@ -2,17 +2,17 @@ import React, { useState, useEffect } from "react";
 import './table.css';
 
 function Table() {
-// //   const [data, setData] = useState([]);
+//   const [data, setData] = useState([]);
 
-// //  useEffect(() => {
+//  useEffect(() => {
 
-// //     //setData(data)
-// //     fetch('127.0.0.1:8000/api/data')
-// //       .then(response => response.json())
-// //       .then((data) => {console.log(data)
-// //         setData(data.data)
-// //       });
-// //   }, []);
+//     //setData(data)
+//     fetch('127.0.0.1:8000/api/data')
+//       .then(response => response.json())
+//       .then((data) => {console.log(data)
+//         setData(data.data)
+//       });
+//   }, []);
 
 const [data,setData]=useState([]);
 
@@ -76,39 +76,45 @@ const [data,setData]=useState([]);
   }
 
   return (
+    
     <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Tech-Skills</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        {data.map((d) => (
-          <tr key={d._id}>
-            <td>{d._id}</td>
-            <td>{d.firstName +" "+ d.middleName+" "+ d.lastName }</td>
-            <td>{d.email}</td>
-            <td>{d.techSkills}</td>
-            <td>
-                {/* <button onClick={() => handleSendData(d)}>Send Data</button> */}
-                <a href onClick={() => handleSendData(d)}>
-                  <img src="path/to/image.jpg" alt="view" />
-                </a>
-                <a href onClick={() => handleSendData(d)}>
-                  <img src="path/to/image.jpg" alt="Delete" />
-                </a>
-                <a href onClick={() => handleSendData(d)}>
-                  <img src="path/to/image.jpg" alt="Edit" />
-                </a>
-              </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Tech-Skills</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {data.map((d) => (
+              <tr key={d._id}>
+                <td>{d._id}</td>
+                <td>{d.firstName +" "+ d.middleName+" "+ d.lastName }</td>
+                <td>{d.email}</td>
+                <td>{d.techSkills}</td>
+                <td>
+                    {/* <button onClick={() => handleSendData(d)}>Send Data</button> */}
+                    <a href onClick={() => handleSendData(d)}>
+                      <img src="path/to/image.jpg" alt="view" />
+                    </a>
+
+                    <a href onClick={() => handleSendData(d)}>
+                      <img src="path/to/image.jpg" alt="Delete" />
+                    </a>
+
+                    <a href onClick={() => handleSendData(d)}>
+                      <img src="path/to/image.jpg" alt="Edit" />
+                    </a>
+                  </td>
+              </tr>
+
+            ))}
+
+          </tbody>
+        </table>
   );
 }
 
