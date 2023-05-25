@@ -62,25 +62,28 @@ export default function Form() {
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="first-name">First Name:</label>
-          <InputForm
-            type="text"
-            id="first-name"
-            value={firstName}
-            onChange={e => setFirstName(e.target.value)}
-          />
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="first-name">First Name:</label>
+            <InputForm
+              type="text"
+              id="first-name"
+              value={firstName}
+              onChange={e => setFirstName(e.target.value)}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="middle-name">Middle Name:</label>
+            <InputForm
+              type="text"
+              id="middle-name"
+              value={middleName}
+              onChange={e => setMiddleName(e.target.value)}
+            />
+          </div>
         </div>
-        <div>
-          <label htmlFor="middle-name">Middle Name:</label>
-          <InputForm
-            type="text"
-            id="middle-name"
-            value={middleName}
-            onChange={e => setMiddleName(e.target.value)}
-          />
-        </div>
-        <div>
+        <div className="form-row">
+          <div className="form-group">
           <label htmlFor="last-name">Last Name:</label>
           <InputForm
             type="text"
@@ -89,7 +92,7 @@ export default function Form() {
             onChange={e => setLastName(e.target.value)}
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="date-of-birth">Date of Birth:</label>
           <InputForm
             type="date"
@@ -98,7 +101,9 @@ export default function Form() {
             onChange={e => setDateOfBirth(e.target.value)}
           />
         </div>
-        <div>
+        </div>
+        <div className="form-row">
+          <div className="form-group">
           <label htmlFor="address">Address:</label>
           <InputForm
             type="text"
@@ -107,7 +112,7 @@ export default function Form() {
             onChange={e => setAddress(e.target.value)}
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="phone-number">Phone Number:</label>
           <InputForm
             type="text"
@@ -118,7 +123,9 @@ export default function Form() {
             onChange={e => setPhoneNumber(e.target.value)}
           />
         </div>
-        <div>
+        </div>
+        <div className="form-row">
+          <div className="form-group">
           <label htmlFor="email">Email:</label>
           <InputForm
             type="email"
@@ -127,7 +134,7 @@ export default function Form() {
             onChange={e => setEmail(e.target.value)}
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="education">Education / Graduation:</label>
           <InputForm
             type="text"
@@ -135,6 +142,7 @@ export default function Form() {
             value={education}
             onChange={e => setEducation(e.target.value)}
           />
+        </div>
         </div>
         <div>
           <label htmlFor="tech-skills">Tech Skills:</label>
@@ -145,11 +153,11 @@ export default function Form() {
             onChange={e => setTechSkills(e.target.value)}
           />
         </div>
-        <div style={{position:'fixed', bottom:'0px'  , width:'75%'}}>
-        <button type="submit">Submit</button>
-        <button type="reset" onClick={handleReset} >
-          Reset
-        </button>
+        <div style={{ position: 'fixed', bottom: '0px', width: '75%' }}>
+          <button type="submit">Submit</button>
+          <button type="reset" onClick={handleReset} >
+            Reset
+          </button>
         </div>
       </form>
     </div>

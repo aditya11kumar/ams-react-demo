@@ -5,7 +5,8 @@ export default function FormData(){
     // console.log(dataObject)
     return <div className="App">
     <form>
-      <div>
+    <div className="form-row">
+          <div className="form-group">
         <label htmlFor="first-name">First Name:</label>
         <InputForm
           type="text"
@@ -14,7 +15,7 @@ export default function FormData(){
           onChange={e => {}}
         />
       </div>
-      <div>
+      <div className="form-group">
         <label htmlFor="middle-name">Middle Name:</label>
         <InputForm
           type="text"
@@ -23,7 +24,9 @@ export default function FormData(){
           onChange={e => {}}
         />
       </div>
-      <div>
+      </div>
+      <div className="form-row">
+          <div className="form-group">
         <label htmlFor="last-name">Last Name:</label>
         <InputForm
           type="text"
@@ -33,7 +36,7 @@ export default function FormData(){
         />
       </div>
 
-      <div>
+      <div className="form-group">
         <label htmlFor="date-of-birth">Date of Birth:</label>
         <InputForm
           type="text"
@@ -42,7 +45,9 @@ export default function FormData(){
           onChange={e => {}}
         />
       </div>
-      <div>
+      </div>
+      <div className="form-row">
+          <div className="form-group">
         <label htmlFor="address">Address:</label>
         <InputForm
           type="text"
@@ -51,7 +56,7 @@ export default function FormData(){
           onChange={e => {}}
         />
       </div>
-      <div>
+      <div className="form-group">
         <label htmlFor="phone-number">Phone Number:</label>
         <InputForm
           type="text"
@@ -61,7 +66,9 @@ export default function FormData(){
           onChange={e => {}}
         />
       </div>
-      <div>
+      </div>
+      <div className="form-row">
+          <div className="form-group">
         <label htmlFor="email">Email:</label>
         <InputForm
           type="email"
@@ -70,7 +77,7 @@ export default function FormData(){
           onChange={e => {}}
         />
       </div>
-      <div>
+      <div className="form-group">
         <label htmlFor="education">Education / Graduation:</label>
         <InputForm
           type="text"
@@ -78,6 +85,7 @@ export default function FormData(){
           value={dataObject.education}
           onChange={e => {}}
         />
+      </div>
       </div>
       <div>
         <label htmlFor="tech-skills">Tech Skills:</label>

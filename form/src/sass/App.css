@@ -18,6 +18,15 @@
   color: white;
 }
 
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.form-row .form-group {
+  width: calc(50% - 10px);
+}
+
 form {
   background-color: white;
   width: 80%;
