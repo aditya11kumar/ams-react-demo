@@ -1,3 +1,16 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable spaced-comment */
+/* eslint-disable object-curly-spacing */
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/jsx-closing-tag-location */
+/* eslint-disable react/jsx-indent */
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable object-shorthand */
+/* eslint-disable max-len */
+/* eslint-disable arrow-parens */
+/* eslint-disable quotes */
+/* eslint-disable import/order */
 import { useState } from "react";
 import InputForm from './input';
 import axios from "axios";
@@ -23,7 +36,7 @@ export default function Form() {
     }
 
     // Display form data in the console
-    console.log(firstName, middleName, lastName, dateOfBirth, address, phoneNumber, email, education, techSkills);
+    //console.log(firstName, middleName, lastName, dateOfBirth, address, phoneNumber, email, education, techSkills);
 
     // Create an object with form data
     const formData = {
@@ -36,11 +49,11 @@ export default function Form() {
       phoneNumber: phoneNumber,
       email: email,
       education: education,
-      techSkills: techSkills
+      techSkills: techSkills,
     };
 
     // Display form data object in the console
-    console.log(formData);
+    //console.log(formData);
 
     // Send form data to the server using axios
     axios.post("http://localhost:8000/form", formData);
@@ -148,7 +161,7 @@ export default function Form() {
           />
         </div>
         </div>
-        <div style={{width:'49%'}}>
+        <div style={{width: '49%'}}>
           <label htmlFor="tech-skills">Tech Skills:</label>
           <InputForm
             type="text"
@@ -160,7 +173,7 @@ export default function Form() {
         </div>
         <div style={{ position: 'fixed', bottom: '0px', width: '75%' }}>
           <button type="submit">Submit</button>
-          <button type="reset" onClick={handleReset} >
+          <button type="reset" onClick={handleReset}>
             Reset
           </button>
         </div>
