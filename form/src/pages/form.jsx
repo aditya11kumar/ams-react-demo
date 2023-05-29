@@ -7,7 +7,6 @@ export default function Form() {
   const [firstName, setFirstName] = useState('');
   const [middleName, setMiddleName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [gender, setGender] = useState('');
   const [dateOfBirth, setDateOfBirth] = useState('');
   const [address, setAddress] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -18,15 +17,20 @@ export default function Form() {
   const handleSubmit = event => {
     event.preventDefault();
 
+    if (!firstName || !lastName || !dateOfBirth || !address || !phoneNumber || !email || !education || !techSkills) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
     // Display form data in the console
-    console.log(firstName, middleName, lastName, gender, dateOfBirth, address, phoneNumber, email, education, techSkills);
+    console.log(firstName, middleName, lastName, dateOfBirth, address, phoneNumber, email, education, techSkills);
 
     // Create an object with form data
     const formData = {
       firstName: firstName,
       middleName: middleName,
       lastName: lastName,
-      gender: gender,
+
       dateOfBirth: dateOfBirth,
       address: address,
       phoneNumber: phoneNumber,
@@ -50,7 +54,7 @@ export default function Form() {
     setFirstName('');
     setMiddleName('');
     setLastName('');
-    setGender('');
+
     setDateOfBirth('');
     setAddress('');
     setPhoneNumber('');
