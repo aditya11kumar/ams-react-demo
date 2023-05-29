@@ -144,13 +144,14 @@ export default function Form() {
           />
         </div>
         </div>
-        <div>
+        <div style={{width:'49%'}}>
           <label htmlFor="tech-skills">Tech Skills:</label>
           <InputForm
             type="text"
             id="tech-skills"
             value={techSkills}
             onChange={e => setTechSkills(e.target.value)}
+            // style={{width:'30px'}}
           />
         </div>
         <div style={{ position: 'fixed', bottom: '0px', width: '75%' }}>

@@ -7,7 +7,7 @@ export default function Navbar() {
             alt="dp"
             style={{ height: '80px', width: '90px' }}
           />
-          <h1>Dealer Management System</h1>
+          <p style={{position:'relative',top:'15px', left:'10px'}}>Dealer Management System</p>
           <div className="login">
             <p style={{ position: 'relative', top: '10px', left: '15px' }}>
               Akhilesh Sharma
