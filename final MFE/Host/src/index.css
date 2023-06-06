@@ -8,3 +8,24 @@ body {
   max-width: 800px;
   margin-top: 20px;
 }
+
+.abc{
+  border-bottom:2px solid grey;
+  border-right: 2px solid grey;
+  margin:20px 10px 20px 10px;
+  padding: 20px 10px 20px 10px;
+  box-shadow: 1px 2px 16px grey;
+}
+
+.abc:hover{
+  transform: scale(1.009);
+}
+
+.abc table td{
+  border-bottom: 1px solid grey;
+  box-shadow: 2px 2px 6px grey;
+  margin-left:2px ;
+  padding: 8px 16px 8px 16px;
+  
+}
+

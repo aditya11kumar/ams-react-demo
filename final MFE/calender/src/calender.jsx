@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
  
 
-const Calendar = () => {
+const Calender = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   const today = new Date(); // Get the current date
 
@@ -29,4 +29,4 @@ const Calendar = () => {
 
  
 
-export default Calendar;
+export default Calender;

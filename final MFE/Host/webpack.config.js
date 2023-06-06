@@ -43,7 +43,9 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "Host",
       filename: "remoteEntry.js",
-      remotes: {calender:"calender@http://localhost:3088.remoteEntry.js",
+      remotes: {calender:"calender@http://localhost:3088/remoteEntry.js",
+      calculator:"calculator@http://localhost:3000/remoteEntry.js",
+      Users:"Users@http://localhost:3002/remoteEntry.js",
      
     },
       exposes: {},
