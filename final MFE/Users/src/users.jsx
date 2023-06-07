@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './header';
 
 
 
@@ -14,6 +15,7 @@ const Users = () => {
 
   return (
 <div>
+  <Header />
 <h2>Table Microfrontend</h2>
 <table>
 <thead>
