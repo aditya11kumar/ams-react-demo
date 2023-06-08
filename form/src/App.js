@@ -9,7 +9,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Table from "./pages/Table";
 import './sass/App.css';
-import Form from "./pages/Form";
+import Form from "./pages/form";
 import Navbar from "./components/Navbar";
 import FormData from "./pages/FormData";
 
