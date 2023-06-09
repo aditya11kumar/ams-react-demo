@@ -1,0 +1,62 @@
+$table-border-collapse: collapse;
+$table-width: 80%;
+$table-position-left: 13%;
+$table-position-bottom: 970px;
+$table-margin: 50px auto;
+$table-position-top: 8%;
+$table-position-right: 1%;
+$table-padding: 1%;
+$table-border: 1px solid #ccc;
+$table-box-shadow: 2px 2px 10px #ccc;
+
+$td-th-border: 1px solid #ddd;
+$td-th-padding: 8px;
+$th-background-color: #f2f2f2;
+
+$button-background-color: #4CAF50;
+$button-border: none;
+$button-color: white;
+$button-padding: 8px 16px;
+$button-text-align: center;
+$button-text-decoration: none;
+$button-display: inline-block;
+$button-font-size: 14px;
+$button-margin: 4px 2px;
+$button-cursor: pointer;
+
+table {
+  border-collapse: $table-border-collapse;
+  width: $table-width;
+  position: relative;
+  left: $table-position-left;
+  bottom: $table-position-bottom;
+  margin: $table-margin;
+  position: absolute;
+  top: $table-position-top;
+  right: $table-position-right;
+  padding: $table-padding;
+  border: $table-border;
+  box-shadow: $table-box-shadow;
+
+  td, th {
+    border: $td-th-border;
+    padding: $td-th-padding;
+  }
+
+  th {
+    background-color: $th-background-color;
+  }
+}
+
+button {
+  background-color: $button-background-color;
+  border: $button-border;
+  color: $button-color;
+  padding: $button-padding;
+  text-align: $button-text-align;
+  text-decoration: $button-text-decoration;
+  display: $button-display;
+  font-size: $button-font-size;
+  margin: $button-margin;
+  cursor: $button-cursor;
+}
