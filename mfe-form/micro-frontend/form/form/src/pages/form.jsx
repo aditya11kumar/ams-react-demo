@@ -171,7 +171,7 @@ export default function Form() {
             // style={{width:'30px'}}
           />
         </div>
-        <div style={{ position: 'fixed', bottom: '0px', width: '75%' }}>
+        <div style={{  bottom: '0px', width: '75%' }}>
           <button type="submit">Submit</button>
           <button type="reset" onClick={handleReset}>
             Reset

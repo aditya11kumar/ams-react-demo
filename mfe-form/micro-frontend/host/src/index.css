@@ -1,29 +1,97 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .container {
-  font-size: 3rem;
-  margin: auto;
-  max-width: 800px;
-  margin-top: 20px;
-}
-.abc{
-  border-bottom:2px solid grey;
-  border-right: 2px solid grey;
-  margin:20px 10px 20px 10px;
-  padding: 20px 10px 20px 10px;
-  box-shadow: 1px 2px 16px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  background-color: rgba(241, 241, 241, 255);
 }
 
-.abc:hover{
-  transform: scale(1.009);
+.app-component-container {
+  /* background-color: black; */
+  max-height: 180vh;
+  width: 80%;
+  margin: 50px auto;
+  position: relative;
+  top: 8%;
+  right: 1%;
+  padding: 1%;
+  /* border: 1px solid #ccc; */
+  /* box-shadow: 2px 2px 10px #ccc; */
 }
 
-.abc table td{
-  border-bottom: 1px solid grey;
-  box-shadow: 2px 2px 6px grey;
-  margin-left:2px ;
-  padding: 8px 16px 8px 16px;
-  
+.app-component-container form {
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.app-component-container form input[type="text"],
+.app-component-container form input[type="email"],
+.app-component-container form textarea,
+.app-component-container form input[type="date"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #ccc;
+  height: 50px;
+  display: inline-block;
+}
+
+.app-component-container form button[type="submit"],
+.app-component-container form button[type="reset"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.app-component-container form button[type="reset"] {
+  background-color: #f44336;
+  position: absolute;
+  right: 8%;
+}
+
+.app-component-container form label {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .app-component-container {
+    width: 90%;
+    top: 20%;
+    right: 5%;
+  }
+
+  .app-component-container form input[type="text"],
+  .app-component-container form input[type="email"],
+  .app-component-container form textarea,
+  .app-component-container form input[type="date"] {
+    width: 100%;
+  }
+}
+
+.calendar-container {
+  width: 80%;
+  margin: 50px auto;
+  /* Add your calendar styles here */
+}
+
+.calculator-container {
+  width: 80%;
+  margin: 50px auto;
+  /* Add your calculator styles here */
 }
