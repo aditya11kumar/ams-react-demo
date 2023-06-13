@@ -5,7 +5,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
-  background-color: rgba(241, 241, 241, 255);
+  /* background-color: rgba(241, 241, 241, 255); */
 }
 
 .app-component-container {
@@ -23,7 +23,7 @@
 
 .app-component-container form {
   background-color: white;
-  padding: 20px;
+  padding: 50px;
   padding-bottom: 50px;
 }
 

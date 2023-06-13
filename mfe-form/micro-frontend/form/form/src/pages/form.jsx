@@ -4,13 +4,11 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable react/jsx-indent */
-/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable object-shorthand */
 /* eslint-disable max-len */
 /* eslint-disable arrow-parens */
 /* eslint-disable quotes */
-/* eslint-disable import/order */
 import { useState } from "react";
 import InputForm from './input';
 import axios from "axios";

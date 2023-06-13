@@ -2,7 +2,6 @@
 /* eslint-disable object-curly-spacing */
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable react/jsx-indent */
-/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable key-spacing */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/react-in-jsx-scope */

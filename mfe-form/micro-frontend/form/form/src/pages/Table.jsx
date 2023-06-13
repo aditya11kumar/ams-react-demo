@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable no-shadow */
 import React, { useState, useEffect } from 'react';
